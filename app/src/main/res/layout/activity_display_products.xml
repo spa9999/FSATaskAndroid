@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="FSA Mobile Store"
+       app:titleTextColor="#fff"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/logoutIV"
+            android:onClick="onLogoutPressed"
+            android:src="@mipmap/logout"
+           />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/viewCartIV"
+            android:onClick="onViewCartPressed"
+            android:src="@mipmap/ic_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d5d5d5"
+        android:id="@+id/frag">
+        <TextView
+            android:id="@+id/srchHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Search Products/Categories.."
+            android:textSize="16dp"
+            android:fontFamily="cursive"
+            android:textColor="#ffffff"
+            android:layout_gravity="center" />
+
+        <SearchView
+            android:background="#d5d5d5"
+            android:padding="8dp"
+            android:id="@+id/searchView1"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_gravity="right"
+
+            android:layout_height="wrap_content"></SearchView>
+    </FrameLayout>
+
+    <ListView
+        android:background="#bebebe"
+        android:id="@+id/productsLV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

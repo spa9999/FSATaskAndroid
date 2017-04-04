@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        >
+
+        <ImageView
+            android:id="@+id/lv_imageCart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/lv_pnameCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="Product Name"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:paddingTop="3dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/lv_quantityCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:hint="Quantity"
+                android:paddingTop="3dp"
+                android:textSize="15sp"
+                android:textStyle="italic|bold"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price/Unit"
+                android:paddingTop="3dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/lv_priceCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price/Unit"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textSize="15sp"
+                android:textStyle="italic|bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:paddingTop="3dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/lv_totalPriceCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textSize="15sp"
+                android:paddingTop="3dp"
+                android:textColor="@color/lightred"
+                android:textStyle="italic|bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

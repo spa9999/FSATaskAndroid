@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.in.praneethambati.fsataskandroid.Activity.SplashActivity">
+
+
+    <ImageView
+        android:layout_marginTop="200dp"
+        android:id="@+id/spalshIV"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/fsastore" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coding Task"
+        android:fontFamily="cursive"
+        android:textColor="#eb0000"
+        android:textSize="26dp"
+        android:textAlignment="center"/>
+</LinearLayout>

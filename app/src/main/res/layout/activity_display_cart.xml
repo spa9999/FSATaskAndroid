@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_detailed_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.in.praneethambati.fsataskandroid.Activity.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="FSA Mobile Store"
+        app:subtitle="CART"
+        app:subtitleTextColor="#f7f7f8"
+        app:titleTextColor="#fff">
+
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+
+    >
+
+        <ListView
+            android:background="#bebebe"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/cartLV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:id="@+id/rel1"
+
+            >
+
+            <Button
+                android:id="@+id/checkoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Proceed to Checkout"
+                android:theme="@style/MyButton"/>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
